@@ -1,0 +1,18 @@
+<h1>Show article:</h1>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+<%= link_to 'Edit', edit_article_path(@article) %>
+</p>
+
+<br/>
+<hr/>
+<%= link_to 'Back to articles', controller: 'articles' %>
